@@ -27,3 +27,5 @@ NoDisplay=false
 X-GNOME-Autostart-enabled=true
 Name=BromaRealista
 Comment=El mejor inicio de día con una imagen y una sorpresa épica 😆" > ~/.config/autostart/broma.desktop
+echo "✅ Todo listo. La víctima verá la imagen y escuchará el sonido al inicio. 😆"
+echo "Que disfrute la sorpresa y que se ría mucho! 🎉"
