@@ -7,3 +7,9 @@ if [ ! -d ".git" ]; then
     echo "Bienvenido al repo de la broma! 😆" > readme.md
 echo "🖼️ Descargando imagen realista... esto va a ser épico!"
 curl -o imagen_graciosa.jpg https://s2.abcstatics.com/Media/201505/07/pantallaazul--644x362--644x362.JPG
+echo "📜 Creando el script de broma..."
+echo '#!/bin/bash' > broma.sh
+echo 'xdg-open "$HOME/broma_inicio/imagen_graciosa.jpg" & ' >> broma.sh
+echo 'notify-send "¡Buenos días, $(whoami)! 🌞" "Tu día comienza con un toque de humor y locura 😂"' >> broma.sh
+echo 'echo "😂 ¡Te atrapamos! Ahora disfrútalo mientras trabajas (o procrastinas)!"' >> broma.sh
+chmod +x broma.sh
