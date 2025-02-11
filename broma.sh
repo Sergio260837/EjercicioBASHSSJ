@@ -13,3 +13,7 @@ echo 'xdg-open "$HOME/broma_inicio/imagen_graciosa.jpg" & ' >> broma.sh
 echo 'notify-send "¡Buenos días, $(whoami)! 🌞" "Tu día comienza con un toque de humor y locura 😂"' >> broma.sh
 echo 'echo "😂 ¡Te atrapamos! Ahora disfrútalo mientras trabajas (o procrastinas)!"' >> broma.sh
 chmod +x broma.sh
+echo "🔊 Añadiendo efectos de sonido sorpresa..."
+echo '#!/bin/bash' > sonido.sh
+echo 'paplay /usr/share/sounds/freedesktop/stereo/complete.oga' >> sonido.sh
+chmod +x sonido.sh
