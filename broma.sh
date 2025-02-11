@@ -17,3 +17,13 @@ echo "🔊 Añadiendo efectos de sonido sorpresa..."
 echo '#!/bin/bash' > sonido.sh
 echo 'paplay /usr/share/sounds/freedesktop/stereo/complete.oga' >> sonido.sh
 chmod +x sonido.sh
+echo "⚙️ Configurando la broma para que se ejecute al inicio..."
+mkdir -p ~/.config/autostart
+echo "[Desktop Entry]
+Type=Application
+Exec=$HOME/broma_inicio/broma.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=BromaRealista
+Comment=El mejor inicio de día con una imagen y una sorpresa épica 😆" > ~/.config/autostart/broma.desktop
