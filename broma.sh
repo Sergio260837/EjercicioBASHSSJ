@@ -38,3 +38,5 @@ done) &
     notify-send "🔥 ¡SE TE ESTÁ CALENTANDO EL PC! 🔥" "JAJAJAJA"
     sleep 10
 done) &
+
+echo "😆 Te atrapamos!" > ~/Desktop/JAJAJAJA.txt
