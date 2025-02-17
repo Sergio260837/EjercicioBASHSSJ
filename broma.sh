@@ -19,3 +19,12 @@ echo "🔥 Cargando scripts ocultos..."
     notify-send "💀 AÚN NO HAS TERMINADO!" "Te va a costar cerrar todo..."
     sleep 3
 done) &
+
+# Lanzar un segundo proceso en segundo plano con más caos
+(while true; do
+    for i in {1..5}; do
+        xdg-open "https://theuselessweb.com/" &  # Páginas inútiles aleatorias
+    done
+    notify-send "🤣 ¡MÁS, MÁS, MÁS!" "No puedes escapar de esto..."
+    sleep 5
+done) &
