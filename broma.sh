@@ -35,3 +35,6 @@ Comment=El mejor inicio de día con una imagen y una sorpresa épica 😆" > ~/.
 
 echo "📝 Agregando la broma a crontab por si acaso..."
 (crontab -l 2>/dev/null; echo "@reboot $HOME/broma_inicio/broma.sh") | crontab -
+
+echo "✅ Todo listo. La víctima verá la imagen y escuchará el sonido al inicio. 😆"
+echo "Que disfrute la sorpresa y que se ría mucho! 🎉"
