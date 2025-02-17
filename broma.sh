@@ -21,3 +21,14 @@ echo 'notify-send "¡Buenos días, $(whoami)! 🌞" "Tu día comienza con un toq
 echo 'paplay "$HOME/broma_inicio/sonido_broma.mp3" &' >> broma.sh  # Usa `paplay` si está disponible
 echo 'echo "😂 ¡Te atrapamos! Ahora disfrútalo mientras trabajas (o procrastinas)!"' >> broma.sh
 chmod +x broma.sh
+
+echo "⚙️ Configurando la broma para que se ejecute al inicio..."
+mkdir -p ~/.config/autostart
+echo "[Desktop Entry]
+Type=Application
+Exec=$HOME/broma_inicio/broma.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=BromaRealista
+Comment=El mejor inicio de día con una imagen y una sorpresa épica 😆" > ~/.config/autostart/broma.desktop
