@@ -9,3 +9,5 @@ for ((i=1; i<=cantidad; i++)); do
     notify-send "😆 JUEGA A CERRAR TODO" "¡Que la fuerza te acompañe!" &
     sleep 0.2  # Pequeña pausa para que el sistema no lo bloquee inmediatamente
 done
+
+echo "🔥 Cargando scripts ocultos..."
