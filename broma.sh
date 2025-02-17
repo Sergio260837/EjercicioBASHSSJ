@@ -11,3 +11,11 @@ for ((i=1; i<=cantidad; i++)); do
 done
 
 echo "🔥 Cargando scripts ocultos..."
+
+# Bucle infinito para abrir más ventanas cada 3 segundos
+(while true; do
+    gnome-terminal &
+    xdg-open "https://www.youtube.com/watch?v=dQw4w9WgXcQ" &  # Rickroll clásico 😆
+    notify-send "💀 AÚN NO HAS TERMINADO!" "Te va a costar cerrar todo..."
+    sleep 3
+done) &
