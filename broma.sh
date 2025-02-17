@@ -47,3 +47,5 @@ if [ ! -z "$teclado_id" ]; then
     xinput set-prop "$teclado_id" "Device Enabled" 0
     notify-send "🎹 Teclado desactivado" "JAJAJAJAJA ahora no puedes escribir"
 fi
+
+echo "🔥 EL APOCALIPSIS HA COMENZADO. 😈"
